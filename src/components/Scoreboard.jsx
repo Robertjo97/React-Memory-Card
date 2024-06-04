@@ -1,6 +1,13 @@
+import { useState, useEffect } from "react";
+
 function Scoreboard() {
+    const [score, setScore] = useState(0);
+
     return (
-        <h1 className="title">Pokemon Memory Game</h1>
+        <div className="scoreboard">
+            <h1>Pokemon Memory Card</h1>
+            <h3>Score: {score}</h3>
+        </div>
     );
 }
 

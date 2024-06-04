@@ -2,3 +2,10 @@
   background-color: black;
   color: white;
 }
+
+.scoreboard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+}
