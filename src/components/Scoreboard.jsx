@@ -1,7 +1,7 @@
-function Title() {
+function Scoreboard() {
     return (
         <h1 className="title">Pokemon Memory Game</h1>
     );
 }
 
-export default Title
+export default Scoreboard;
