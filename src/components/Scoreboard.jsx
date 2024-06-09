@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Scoreboard() {
-    const [score, setScore] = useState(0);
-
+function Scoreboard({score}) {
     return (
         <div className="scoreboard">
             <h1>Pokemon Memory Card</h1>
