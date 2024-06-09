@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 function Scoreboard({score}) {
     return (
         <div className="scoreboard">
