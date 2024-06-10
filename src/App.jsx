@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Scoreboard from "./components/Scoreboard";
+import Grid from "./components/Grid";
 
 //https://pokeapi.co/api/v2/pokemon/?limit=20
 
@@ -40,7 +41,12 @@ const App = () => {
     fetchPokemon();
   }, []);
   console.log(pokemonList);
-  return <Scoreboard score={score} />;
+  return (
+    <>
+      <Scoreboard score={score} />
+      <Grid pokemons={pokemonList} />
+    </>
+  );
 };
 
 export default App;
