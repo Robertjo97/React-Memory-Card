@@ -40,11 +40,17 @@ const App = () => {
     };
     fetchPokemon();
   }, []);
-  console.log(pokemonList);
+
+  const click = () => {
+    setScore((score) => {
+      return score + 1;
+    });
+  }
+
   return (
     <>
       <Scoreboard score={score} />
-      <Grid pokemons={pokemonList} />
+      <Grid pokemons={pokemonList} handleClick={click}/>
     </>
   );
 };

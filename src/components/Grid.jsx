@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-const Grid = ({ pokemons }) => {
+const Grid = ({ pokemons, handleClick }) => {
   return (
     <div className="grid">
       {pokemons.map((pokemon) => {
@@ -9,6 +9,7 @@ const Grid = ({ pokemons }) => {
             key={pokemon.name}
             name={pokemon.name}
             sprite={pokemon.sprite}
+            handleClick={handleClick}
           ></Card>
         );
       })}
