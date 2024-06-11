@@ -1,0 +1,8 @@
+- Add offset to api call (randomly generated offset number out of full dex size - 12) so 12 out of all pokemon can be randomly available on initial call.
+
+- Add Shuffle function.
+
+- Add score reset and highest score.
+
+- Style as real like pokemon cards.
+
