@@ -6,7 +6,9 @@ import Grid from "./components/Grid";
 
 const App = () => {
   const [score, setScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
   const [pokemonList, setPokemonList] = useState([]);
+  const [memory, setMemory] = useState([]);
 
   useEffect(() => {
     const fetchPokemon = async () => {
@@ -41,19 +43,22 @@ const App = () => {
     fetchPokemon();
   }, []);
 
-  const memory = []
   const click = (name) => {
-    console.log({name})
-    //if(memory.includes())
-    setScore((score) => {
-      return score + 1;
-    });
-  }
+    if (memory.includes(name)) {
+      setScore(0);
+      setMemory([]);
+    } else {
+      setMemory([...memory, name]);
+      setScore((score) => {
+        return score + 1;
+      });
+    }
+  };
 
   return (
     <>
       <Scoreboard score={score} />
-      <Grid pokemons={pokemonList} handleClick={click}/>
+      <Grid pokemons={pokemonList} handleClick={click} />
     </>
   );
 };
