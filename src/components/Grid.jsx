@@ -9,7 +9,7 @@ const Grid = ({ pokemons, handleClick }) => {
             key={pokemon.name}
             name={pokemon.name}
             sprite={pokemon.sprite}
-            handleClick={handleClick}
+            handleClick={() => {handleClick(pokemon.name)}}
           ></Card>
         );
       })}

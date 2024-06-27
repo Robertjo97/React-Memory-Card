@@ -41,7 +41,10 @@ const App = () => {
     fetchPokemon();
   }, []);
 
-  const click = () => {
+  const memory = []
+  const click = (name) => {
+    console.log({name})
+    //if(memory.includes())
     setScore((score) => {
       return score + 1;
     });
