@@ -4,5 +4,5 @@
 
 - Add score reset and highest score.
 
-- Style as real like pokemon cards.
+- Style as real life pokemon cards.
 
