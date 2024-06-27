@@ -45,6 +45,9 @@ const App = () => {
 
   const click = (name) => {
     if (memory.includes(name)) {
+      if(score > highScore){
+        setHighScore(score);
+      }
       setScore(0);
       setMemory([]);
     } else {
