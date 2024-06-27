@@ -57,7 +57,7 @@ const App = () => {
 
   return (
     <>
-      <Scoreboard score={score} />
+      <Scoreboard score={score} highScore={highScore} />
       <Grid pokemons={pokemonList} handleClick={click} />
     </>
   );
