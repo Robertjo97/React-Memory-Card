@@ -12,10 +12,10 @@ const App = () => {
 
   useEffect(() => {
     const fetchPokemon = async () => {
+      let offset = Math.floor(Math.random() * 1013);
+      let url = "https://pokeapi.co/api/v2/pokemon/?limit=12&offset=" + offset;
       try {
-        const response = await fetch(
-          "https://pokeapi.co/api/v2/pokemon/?limit=12"
-        );
+        const response = await fetch(url);
         const data = await response.json();
         const results = data.results;
 

@@ -1,4 +1,5 @@
-- Add offset to api call (randomly generated offset number out of full dex size - 12) so 12 out of all pokemon can be randomly available on initial call.
+- Add 'You Win' upon hitting all 12 (score of 12)
 
 - Style as real life pokemon cards.
 
+- Reset board to initial state on game loss.
