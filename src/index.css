@@ -1,0 +1,33 @@
+.grid {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-image: url('./assets/card.png');
+    background-size: cover;
+    height:421px;
+    width:300px;
+    border:2px solid white;
+    margin-bottom: 5%;
+}
+
+.card:hover {
+    cursor: pointer;
+    border:2px solid red;
+}
+
+img {
+    height: 200px;
+    width:auto;
+    position: relative;
+    left:17%;
+    bottom:7%;
+
+}
+
+h3 {
+    position: relative;
+    left:25%;
+}
