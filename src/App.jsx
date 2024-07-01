@@ -26,8 +26,13 @@ const App = () => {
             const data = await response.json();
             const sprite = data.sprites.front_default;
 
+            const firstLetter = name.charAt(0);
+            const fixedFirstLetter = firstLetter.toUpperCase();
+            const theRest= name.slice(1);
+            const fixedName = fixedFirstLetter + theRest;
+
             return {
-              name: name,
+              name: fixedName,
               sprite: sprite,
             };
           } catch (error) {
