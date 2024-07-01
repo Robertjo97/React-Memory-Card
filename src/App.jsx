@@ -28,7 +28,7 @@ const App = () => {
 
             const firstLetter = name.charAt(0);
             const fixedFirstLetter = firstLetter.toUpperCase();
-            const theRest= name.slice(1);
+            const theRest = name.slice(1);
             const fixedName = fixedFirstLetter + theRest;
 
             return {
@@ -50,7 +50,7 @@ const App = () => {
 
   const click = (name) => {
     if (memory.includes(name)) {
-      if(score > highScore){
+      if (score > highScore) {
         setHighScore(score);
       }
       setScore(0);
@@ -65,11 +65,11 @@ const App = () => {
   };
 
   const shuffle = () => {
-    for(let i = pokemonList.length - 1; i > 0; i--){
+    for (let i = pokemonList.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [pokemonList[i], pokemonList[j]] = [pokemonList[j], pokemonList[i]];
     }
-  }
+  };
 
   return (
     <>
